@@ -1,0 +1,12 @@
+it's a small BuddyPress plugin to let you know the users that haven't activated their account, or that haven't logged in so far or that felt asleep and haven't come back on the website for a while (default is 30 days)
+
+Requires :
+- WordPress 3.4.2
+- BuddyPress 1.6
+
+Simply drop the folder in your plugins directory and then activate from WordPress Admin or Network Admin.
+
+You can customize some elements using filters in your active theme's functions.php :
+
+- add_filter('bp_wus_list_sleeping_users_days', 'your_filter_days', 10, 1) to set a new period of inactivity in days (int)
+- add_filter('bp_wus_return_template', 'your_filter_mail_template', 10, 2) to set a mail template (string) depending on type of request (unactivated, never logged in or inactive for the time period)
