@@ -1,0 +1,35 @@
+#icon-bp-wus{
+	background:url( ../images/alarm-36x36.png );
+}
+
+.wus-insert-favorites .wus-button,
+.wus-save .wus-button,
+.wus-preview .wus-button
+{
+	display:inline-block;
+	left:-10px;
+	padding-left:20px;
+}
+
+.wus-insert-favorites, .wus-save, .wus-preview{
+	padding-left: .4em!important;
+}
+
+.wus-insert-favorites .wus-button {
+	background:url( ../images/bp-logo.png ) no-repeat top left;
+}
+
+.wus-save .wus-button {
+	background:url( ../images/bp-wus-save.png ) no-repeat top left;
+}
+
+.wus-preview .wus-button {
+	background:url( ../images/bp-wus-preview.png ) no-repeat top left;
+}
+
+.hide{
+	display:none;
+}
+.show-info{
+	display:block;
+}

@@ -1,0 +1,345 @@
+# Copyright (C) 2012 BP wake up sleepers
+# This file is distributed under the same license as the BP wake up sleepers package.
+msgid ""
+msgstr ""
+"Project-Id-Version: BP wake up sleepers 1.0-beta1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/bp-wake-up-sleepers\n"
+"POT-Creation-Date: 2012-12-19 21:59:59+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2012-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: includes/bp-wus-admin.php:17 includes/bp-wus-admin.php:49
+msgid "1- Select Sleepers"
+msgstr ""
+
+#: includes/bp-wus-admin.php:21 includes/bp-wus-admin.php:71
+msgid "2- Compose Mail"
+msgstr ""
+
+#: includes/bp-wus-admin.php:25 includes/bp-wus-admin.php:87
+msgid "3- Send Mails"
+msgstr ""
+
+#: includes/bp-wus-admin.php:29 includes/bp-wus-admin.php:91
+msgid "4- Manage Unsubscribed"
+msgstr ""
+
+#: includes/bp-wus-admin.php:60
+msgid "Email saved"
+msgstr ""
+
+#: includes/bp-wus-admin.php:62
+msgid "Oops something went wrong"
+msgstr ""
+
+#: includes/bp-wus-admin.php:106
+msgid "Select the type of sleepers"
+msgstr ""
+
+#: includes/bp-wus-admin.php:108
+msgid "Not activated"
+msgstr ""
+
+#: includes/bp-wus-admin.php:109 includes/bp-wus-template.php:222
+msgid "Never logged in"
+msgstr ""
+
+#: includes/bp-wus-admin.php:110
+msgid "Sleeping Buddies"
+msgstr ""
+
+#: includes/bp-wus-admin.php:127
+msgid "Some code to customize your email"
+msgstr ""
+
+#: includes/bp-wus-admin.php:130
+msgid "will echo the display name of the user"
+msgstr ""
+
+#: includes/bp-wus-admin.php:132
+msgid "will echo a link to activate the user&#39;s account"
+msgstr ""
+
+#: includes/bp-wus-admin.php:134
+msgid "will echo the login of the user"
+msgstr ""
+
+#: includes/bp-wus-admin.php:136
+msgid "will echo a link to user&#39;s profile page"
+msgstr ""
+
+#: includes/bp-wus-admin.php:147
+msgid "Send all"
+msgstr ""
+
+#: includes/bp-wus-admin.php:148
+msgid "Send a test to admin email"
+msgstr ""
+
+#: includes/bp-wus-admin.php:152
+msgid "Please wait till the <b>Result</b> appears at the bottom of the iframe below"
+msgstr ""
+
+#: includes/bp-wus-admin.php:160
+msgid "Below the list of the unsubscribed users and their types, you can remove a user from the unsubscribed list, delete users that unsubscribed and never logged in or never activated their accounts"
+msgstr ""
+
+#: includes/bp-wus-admin.php:164 includes/bp-wus-admin.php:167
+#: includes/bp-wus-admin.php:205 includes/bp-wus-admin.php:208
+msgid "email"
+msgstr ""
+
+#: includes/bp-wus-admin.php:164 includes/bp-wus-admin.php:167
+msgid "Type"
+msgstr ""
+
+#: includes/bp-wus-admin.php:164 includes/bp-wus-admin.php:167
+msgid "Actions"
+msgstr ""
+
+#: includes/bp-wus-admin.php:183
+msgid "Unsubscribed list is empty"
+msgstr ""
+
+#: includes/bp-wus-admin.php:194
+msgid "Latest emailing results for this kind of sleepers"
+msgstr ""
+
+#: includes/bp-wus-admin.php:196
+msgid "Date:"
+msgstr ""
+
+#: includes/bp-wus-admin.php:197 includes/bp-wus-send-mails.php:71
+msgid "Number of email(s) sent:"
+msgstr ""
+
+#: includes/bp-wus-admin.php:198 includes/bp-wus-send-mails.php:72
+msgid "Number of error(s):"
+msgstr ""
+
+#: includes/bp-wus-admin.php:205 includes/bp-wus-admin.php:208
+msgid "Avatar"
+msgstr ""
+
+#: includes/bp-wus-admin.php:205 includes/bp-wus-admin.php:208
+msgid "Since"
+msgstr ""
+
+#: includes/bp-wus-admin.php:205 includes/bp-wus-admin.php:208
+msgid "Display name"
+msgstr ""
+
+#: includes/bp-wus-admin.php:226
+msgid "Pages : "
+msgstr ""
+
+#: includes/bp-wus-admin.php:230
+msgid "No sleeper to display"
+msgstr ""
+
+#: includes/bp-wus-admin.php:254
+msgid "BP Wake Up Sleepers Settings"
+msgstr ""
+
+#: includes/bp-wus-admin.php:261
+msgid "Which template do you wish to use ?"
+msgstr ""
+
+#: includes/bp-wus-admin.php:263
+msgid "Light"
+msgstr ""
+
+#: includes/bp-wus-admin.php:264
+msgid "Full"
+msgstr ""
+
+#: includes/bp-wus-admin.php:269
+msgid "Full template is adding an header and a footer based on your site&#39;s information"
+msgstr ""
+
+#: includes/bp-wus-admin.php:274
+msgid "Use header image instead of blog name and description (full template only)"
+msgstr ""
+
+#: includes/bp-wus-admin.php:276
+msgid "Yes"
+msgstr ""
+
+#: includes/bp-wus-admin.php:277
+msgid "No"
+msgstr ""
+
+#: includes/bp-wus-admin.php:285
+msgid "Save Settings"
+msgstr ""
+
+#: includes/bp-wus-class.php:140
+msgid "Please add some content to this email thanks to the Compose Mail tab"
+msgstr ""
+
+#: includes/bp-wus-class.php:170 includes/bp-wus-class.php:225
+msgid "activate your account"
+msgstr ""
+
+#: includes/bp-wus-class.php:172 includes/bp-wus-class.php:236
+msgid "profile page"
+msgstr ""
+
+#: includes/bp-wus-class.php:173 includes/bp-wus-class.php:247
+msgid "Unsubscribe"
+msgstr ""
+
+#: includes/bp-wus-class.php:193
+msgid "OOps, no user seems to match your request!"
+msgstr ""
+
+#: includes/bp-wus-class.php:229
+msgid "activation reminder"
+msgstr ""
+
+#: includes/bp-wus-class.php:238
+msgid "come visit us !"
+msgstr ""
+
+#: includes/bp-wus-email-preview.php:20 includes/bp-wus-email-preview.php:32
+msgid "A preview of your mail"
+msgstr ""
+
+#: includes/bp-wus-email-preview.php:43
+msgid "Close preview"
+msgstr ""
+
+#: includes/bp-wus-functions.php:91 includes/bp-wus-functions.php:127
+msgid "OOps, we could not identify you."
+msgstr ""
+
+#: includes/bp-wus-functions.php:120
+msgid "You successfully unsubscribed to this website"
+msgstr ""
+
+#: includes/bp-wus-functions.php:124
+msgid "You are already unsubscribed to this website"
+msgstr ""
+
+#: includes/bp-wus-functions.php:157
+msgid "OOps, no unsubscribed user found"
+msgstr ""
+
+#: includes/bp-wus-functions.php:165 includes/bp-wus-functions.php:205
+msgid "OOps, unexpected error"
+msgstr ""
+
+#: includes/bp-wus-loader.php:35
+msgid "BP Wake Up Sleepers"
+msgstr ""
+
+#: includes/bp-wus-loader.php:37
+msgid "Options"
+msgstr ""
+
+#: includes/bp-wus-loader.php:47
+msgid "Are you sure ?"
+msgstr ""
+
+#: includes/bp-wus-loader.php:60
+msgid "Add Favorites"
+msgstr ""
+
+#: includes/bp-wus-loader.php:64
+msgid "Save email"
+msgstr ""
+
+#: includes/bp-wus-loader.php:68
+msgid "Preview email"
+msgstr ""
+
+#: includes/bp-wus-send-mails.php:22
+msgid "BP Wus Mailer"
+msgstr ""
+
+#: includes/bp-wus-send-mails.php:58
+msgid "OOps, you need to wait untill tomorrow before being able to send this request again"
+msgstr ""
+
+#: includes/bp-wus-send-mails.php:76
+msgid "Error in mails:"
+msgstr ""
+
+#: includes/bp-wus-shortcode-editor.php:20
+msgid "Add some of your favorite activities"
+msgstr ""
+
+#: includes/bp-wus-shortcode-editor.php:32
+msgid "Choose the activity you want to insert in your mail"
+msgstr ""
+
+#: includes/bp-wus-shortcode-editor.php:35
+#: includes/bp-wus-shortcode-editor.php:38
+msgid "Favorite Activities"
+msgstr ""
+
+#: includes/bp-wus-shortcode-editor.php:57
+msgid "No activity favorited"
+msgstr ""
+
+#: includes/bp-wus-shortcode-editor.php:64
+msgid "Insert selected activities"
+msgstr ""
+
+#: includes/bp-wus-template.php:37
+msgctxt "Sleeper pagination previous text"
+msgid "&larr;"
+msgstr ""
+
+#: includes/bp-wus-template.php:38
+msgctxt "Sleeper pagination next text"
+msgid "&rarr;"
+msgstr ""
+
+#: includes/bp-wus-template.php:160
+msgid "Unknown"
+msgstr ""
+
+#: includes/bp-wus-template.php:212 includes/bp-wus-template.php:217
+msgid "Account not activated"
+msgstr ""
+
+#: includes/bp-wus-template.php:212 includes/bp-wus-template.php:217
+msgid "Delete registration"
+msgstr ""
+
+#: includes/bp-wus-template.php:212 includes/bp-wus-template.php:217
+#: includes/bp-wus-template.php:222 includes/bp-wus-template.php:224
+msgid "Remove from unsubsribed list"
+msgstr ""
+
+#: includes/bp-wus-template.php:222
+msgid "Delete account"
+msgstr ""
+
+#: includes/bp-wus-template.php:224
+msgid "Sleeping member"
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "BP wake up sleepers"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://imath.owni.fr/2012/12/20/bp-wake-up-sleepers/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Need to wake the sleeping users of your BuddyPress community ?"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "imath"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://imath.owni.fr"
+msgstr ""
