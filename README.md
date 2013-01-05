@@ -16,7 +16,7 @@ unsubscribed to mails.
 You can watch a demo of the plugin on my vimeo [vimeo](http://vimeo.com/55975541)
 Available in french and english.
 
-For the french description of the plugin please visit my [blog](http://imath.owni.fr/2012/12/20/bp-wake-up-sleepers/)
+For the french description of the plugin please visit my [blog](http://imathi.eu/2012/12/20/bp-wake-up-sleepers/)
 
 
 Configuration needed

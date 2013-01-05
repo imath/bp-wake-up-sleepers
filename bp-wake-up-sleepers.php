@@ -1,11 +1,11 @@
 <?php
 /* 
 Plugin Name: BP wake up sleepers
-Plugin URI: http://imath.owni.fr/2012/12/20/bp-wake-up-sleepers/
+Plugin URI: http://imathi.eu/2012/12/20/bp-wake-up-sleepers/
 Description: Need to wake the sleeping users of your BuddyPress community ?
 Version: 1.0-beta1
 Author: imath
-Author URI: http://imath.owni.fr
+Author URI: http://imathi.eu
 License: GPLv2
 Network: true
 Text Domain: bp-wake-up-sleepers
