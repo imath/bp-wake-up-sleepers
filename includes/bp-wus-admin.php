@@ -45,14 +45,18 @@ function bp_wus_admin_tabs( $active_tab = '' ) {
 function bp_wus_admin() {
 	global $allowedtags;
 	
+	$class_selbox = '';
+	$bp_wus_message = '';
 	$class = 'hide';
 	$active = __( '1- Select Sleepers', 'bp-wake-up-sleepers' );
-	$sleepers_type = $_GET['sleepers-type'];
+	if ( isset( $_GET['sleepers-type'] ) ) {
+		$sleepers_type = $_GET['sleepers-type'];
+	}
 	
-	if( empty( $sleepers_type ) )
+	if( ! isset( $sleepers_type) || empty( $sleepers_type ) )
 		$sleepers_type = 'unactivated';
 	
-	if( $_POST["email_content"] ) {
+	if( isset( $_POST["email_content"] ) ) {
 		if ( !check_admin_referer('bp-wus-template-save') )
 			return false;
 		
@@ -65,8 +69,7 @@ function bp_wus_admin() {
 		$class = "show-info";
 
 	}
-	
-	if( $_GET['tab'] == 'template' ) {
+	if( isset( $_GET['tab'] ) && $_GET['tab'] == 'template' ) {
 		
 		$active = __( '2- Compose Mail', 'bp-wake-up-sleepers' );
 		$email_content = get_option( 'bp_wus_user_email_template_'.$sleepers_type );
@@ -82,11 +85,11 @@ function bp_wus_admin() {
 			'quicktags' => true
 		);
 		
-	} else if( $_GET['tab'] == 'send' ) {
+	} else if( isset( $_GET['tab'] ) && $_GET['tab'] == 'send' ) {
 		
 		$active = __( '3- Send Mails', 'bp-wake-up-sleepers' );
 		
-	} else if( $_GET['tab'] == 'manage' ) {
+	} else if( isset( $_GET['tab'] ) && $_GET['tab'] == 'manage' ) {
 
 		$active = __( '4- Manage Unsubscribed', 'bp-wake-up-sleepers' );
 		$unsubscribed = get_option( 'bp_wus_unsubscribed' );
@@ -111,7 +114,7 @@ function bp_wus_admin() {
 			</select>
 		</p>
 		
-		<?php if( $_GET['tab'] == 'template' ):?>
+		<?php if( isset( $_GET['tab'] ) && $_GET['tab'] == 'template' ):?>
 			
 			<div id="message" class="updated <?php echo $class;?>">
 				<p><?php echo $bp_wus_message; ?></p>
@@ -141,7 +144,7 @@ function bp_wus_admin() {
 				
 				<?php wp_nonce_field( 'bp-wus-template-save' ); ?>
 			</form>
-		<?php elseif( $_GET['tab'] == 'send' ):?>
+		<?php elseif( isset( $_GET['tab'] ) && $_GET['tab'] == 'send' ):?>
 			
 			<p class="submit">
 				<a href="<?php echo wp_nonce_url( BP_WUS_PLUGIN_URL .'/includes/bp-wus-send-mails.php?sleeperstype=' . $sleepers_type, 'bp_wus_send_all' ) ?>" id="bp-wus-send-all" class="button-primary" target="bp-wus-mailer"><?php _e('Send all', 'bp-wake-up-sleepers')?></a>
@@ -154,7 +157,7 @@ function bp_wus_admin() {
 			
 			<iframe name="bp-wus-mailer" id="bp-wus-mailer" style="border:0;overflow:hidden" width="100%" height="170px" src=""></iframe>
 		
-		<?php elseif( $_GET['tab'] == 'manage' ):?>
+		<?php elseif( isset( $_GET['tab'] ) && $_GET['tab'] == 'manage' ):?>
 			
 			<br/>
 			<p class="description"><?php _e('Below the list of the unsubscribed users and their types, you can remove a user from the unsubscribed list, delete users that unsubscribed and never logged in or never activated their accounts', 'bp-wake-up-sleepers');?></p> 

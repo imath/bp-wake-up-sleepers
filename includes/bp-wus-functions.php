@@ -10,7 +10,7 @@ function bp_wus_add_activation_date( $user_id, $key, $user ) {
 	if( !is_multisite() ) {
 		update_user_meta( $user_id, 'wus_activated_account', bp_core_current_time() );
 	}
-	return $usermeta;
+	return true;
 }
 
 function bp_wus_since_activation_date( $email_or_id ) {

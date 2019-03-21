@@ -144,7 +144,7 @@ class BP_Alarm_Sleepers
 		
 		
 		$email = str_replace( '{{content}}', $message_email, $email );
-		
+
 		if( $which_template == 'email-full.html' ) {
 			if( get_header_image() && 1 == get_option('bp-wus-enable-theme-header-image') )
 				$header = '<a href="'.site_url().'" title="'.get_bloginfo('name').'"><img src="'.get_header_image().'" style="max-width:100%"></a>';
@@ -159,16 +159,22 @@ class BP_Alarm_Sleepers
 		}
 		
 		if( !empty( $preview ) ) {
-			$display_name = $this->query['sleepers'][0]->display_name;
+			if ( isset( $this->query['sleepers'][0]->display_name ) ) {
+				$display_name = $this->query['sleepers'][0]->display_name;
+			}
 			
 			if( is_multisite() && 'unactivated' == $type ) {
 				$meta = maybe_unserialize( $display_name );
 				$display_name = $meta['field_1'];
 			}
 			
-			$email = str_replace('{{displayname}}', $display_name, $email );
+			if ( isset($display_name ) ) {
+				$email = str_replace('{{displayname}}', $display_name, $email );
+			}
 			$email = str_replace('{{activationlink}}', '<a href="#">'.__('activate your account', 'bp-wake-up-sleepers').'</a>', $email );
-			$email = str_replace('{{userlogin}}', $this->query['sleepers'][0]->user_login, $email );
+			if ( isset( $this->query['sleepers'][0]->user_login ) ) {
+				$email = str_replace('{{userlogin}}', $this->query['sleepers'][0]->user_login, $email );
+			}
 			$email = str_replace('{{memberlink}}', '<a href="#">'.__('profile page', 'bp-wake-up-sleepers').'</a>', $email );
 			$email = str_replace('{{unsubscribelink}}', '| <span><a href="#" title="'.__('Unsubscribe', 'bp-wake-up-sleepers').'">'.__('Unsubscribe', 'bp-wake-up-sleepers').'</a></span>', $email );
 		}
