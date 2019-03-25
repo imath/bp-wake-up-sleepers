@@ -1,7 +1,5 @@
 <?php
-$admin = dirname( __FILE__ ) ;
-$admin = substr( $admin , 0 , strpos( $admin , "wp-content" ) ) ;
-require_once( $admin . 'wp-admin/admin.php' ) ;
+require_once $_SERVER['DOCUMENT_ROOT'] . '/wp-admin/admin.php';
 
 $type = $_GET['sleeperstype'];
 
@@ -23,7 +21,7 @@ wp_enqueue_script('jquery');
 	<meta name="generator" content="TextMate http://macromates.com/">
 	<meta name="author" content="imath">
 	<!-- Date: 2012-02-17 -->
-	<?php 
+	<?php
 	do_action('admin_print_styles');
 	do_action('admin_print_scripts');
 	do_action('admin_head');
@@ -43,9 +41,9 @@ wp_enqueue_script('jquery');
 	<div class="wrap" style="margin:0 auto;width:90%">
 		<?php
 
-		if( $_GET['test'] == 1 ) {
+		if ( isset( $_GET['test'] ) && 1 === (int) $_GET['test'] ) {
 			check_admin_referer('bp_wus_send_test');
-	
+
 			$sleepers = new BP_Alarm_Sleepers( $type, 1, 1);
 			echo '<ul>';
 			$sleepers->send_mails( bp_core_get_user_email( bp_loggedin_user_id() ) );
@@ -53,10 +51,10 @@ wp_enqueue_script('jquery');
 			$result = $sleepers->mail_results ;
 		} else {
 			check_admin_referer('bp_wus_send_all');
-			
+
 			if( 1 == get_transient( 'bp_wus_last_mailing_' . $type ) )
 				wp_die( __('OOps, you need to wait untill tomorrow before being able to send this request again', 'bp-wake-up-sleepers') );
-	
+
 			$sleepers = new BP_Alarm_Sleepers( $type );
 			echo '<ul>';
 			$sleepers->send_mails();
@@ -81,7 +79,7 @@ wp_enqueue_script('jquery');
 			</table>
 			<?php endif;?>
 		</div>
-	
+
 		<script type="text/javascript">
 			jQuery(document).ready(function($){
 				$('html, body').animate({scrollTop: $('.wrap').height()}, 800);

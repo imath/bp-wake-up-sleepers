@@ -1,5 +1,5 @@
 <?php
-/* 
+/*
 Plugin Name: BP wake up sleepers
 Plugin URI: http://imathi.eu/2012/12/20/bp-wake-up-sleepers/
 Description: Need to wake the sleeping users of your BuddyPress community ?
@@ -7,7 +7,6 @@ Version: 1.0-beta1
 Author: imath
 Author URI: http://imathi.eu
 License: GPLv2
-Network: true
 Text Domain: bp-wake-up-sleepers
 Domain Path: /languages/
 */
@@ -33,12 +32,12 @@ function bp_wus_init() {
 
 function bp_wus_install(){
 	if( BP_WUS_PLUGIN_VERSION != get_option( 'bp-wus-version' ) ){
-		
+
 		$page_id = get_option( 'bp-wus-page' );
-		
+
 		if( empty( $page_id ) ){
 			$page_id = wp_insert_post( array( 'comment_status' => 'closed', 'ping_status' => 'closed', 'post_title' => 'Unsubscribe', 'post_status' => 'publish', 'post_type' => 'page' ) );
-			
+
 			update_option( 'bp-wus-page', $page_id );
 		}
 
@@ -52,7 +51,7 @@ register_activation_hook( __FILE__, 'bp_wus_install' );
 /**
 * bp_checkins_load_textdomain
 * translation!
-* 
+*
 */
 function bp_wus_load_textdomain() {
 
