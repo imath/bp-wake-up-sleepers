@@ -1,6 +1,8 @@
 BP Wake Up Sleepers
 ===================
 
+This WP/BP Plugin is no more supported and this repository is now archived.
+
 BP Wake Up Sleepers is a BuddyPress plugin to allow the admin of a community to manage sleeping users.
 
 Sleeping users are :
